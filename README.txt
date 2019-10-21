@@ -4,7 +4,7 @@ Builded with C & SDL2 Libraries
 Works Only With 64-Bit Machines
 Tested on Ubuntu 19.10 & Windows 10 1909 & 1809 versions.
 
--UP DOWN LEFT AND RÝGHT TO MOVE
+-UP DOWN LEFT AND RIGHT TO MOVE
 -ESC TO EXIT
 
 --- FOR LINUX ---
