@@ -66,11 +66,11 @@ void guncelle(struct node* head, struct node* prev){
         guncelle(local_iterator->next,local_iterator);
     }
     if(local_iterator->isNew==true){
-       local_iterator->konum.x = prev->konum.x;
-       local_iterator->konum.y = prev->konum.y;
+       local_iterator->isNew = false;
     }
     else{
-        local_iterator->isNew = false;
+       local_iterator->konum.x = prev->konum.x;
+       local_iterator->konum.y = prev->konum.y;
     }
 
 }
@@ -194,7 +194,7 @@ int main(int argc, char** argv){
 
             //keyboard event
 
-            if (event.type == SDL_KEYDOWN){  //buffer ile keydown okuma çözülecek.
+            if (event.type == SDL_KEYDOWN){  //buffer ile keydown okuma Ã§Ã¶zÃ¼lecek.
 
                 switch(event.key.keysym.sym){
 
@@ -268,7 +268,7 @@ int main(int argc, char** argv){
             iterator = iterator->next;
         }
 
-	    // Göster
+	    // GÃ¶ster
 	    SDL_RenderPresent(renderer);
 
     }
